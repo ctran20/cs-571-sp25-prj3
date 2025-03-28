@@ -1,0 +1,9 @@
+java -cp bin TestPart2
+Input: 100.0 + -.02 032.1* (   0.2 / 3.0) /
+	 4.05
+[NUM("100.0"); WHITE_SPACE(" "); PLUS("+"); WHITE_SPACE(" "); MINUS("-"); NUM(".02"); WHITE_SPACE(" "); NUM("032.1"); TIMES("*"); WHITE_SPACE(" "); LPAREN("("); WHITE_SPACE("   "); NUM("0.2"); WHITE_SPACE(" "); DIV("/"); WHITE_SPACE(" "); NUM("3.0"); RPAREN(")"); WHITE_SPACE(" "); DIV("/"); WHITE_SPACE("
+	 "); NUM("4.05")]
+Input: 1.0 + 2.0 + 3.0 + 4.0
+[NUM("1.0"); WHITE_SPACE(" "); PLUS("+"); WHITE_SPACE(" "); NUM("2.0"); WHITE_SPACE(" "); PLUS("+"); WHITE_SPACE(" "); NUM("3.0"); WHITE_SPACE(" "); PLUS("+"); WHITE_SPACE(" "); NUM("4.0")]
+Input: 1.0 + 2.0 - 3.0 + 4.0
+[NUM("1.0"); WHITE_SPACE(" "); PLUS("+"); WHITE_SPACE(" "); NUM("2.0"); WHITE_SPACE(" "); MINUS("-"); WHITE_SPACE(" "); NUM("3.0"); WHITE_SPACE(" "); PLUS("+"); WHITE_SPACE(" "); NUM("4.0")]

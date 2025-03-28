@@ -1,0 +1,20 @@
+java -cp bin TestPart1
+a1 accepts empty string (should be false): false
+a1 has transitions on 'a' (should be true): true
+a1 accepts 'a' (should be true): true
+a1 has transitions on 'b' (should be false): false
+a1 accepts 'ab' (should be false): false
+a2 accepts empty string (should be false): false
+a2 accepts 'a' (should be true): true
+a2 accepts 'ab' (should be false): false
+a2 has transition to 'c' (should be true): true
+a2 accepts 'abc' (should be true): true
+a2 has transition to 'z' (should be false): false
+a2 has transition to 'a' (should be false): false
+a_num accepts "1243f" (should be false): false
+a_num accepts "3" (should be true): true
+a_num accepts "124" (should be true): true
+a_num accepts "90983724847619547905718498504" (should be true): true
+a_num accepts "124.3f" (should be false): false
+Lexing "1 2  3 4414" with simple lexer.
+result: [NUM("1"); WHITE_SPACE(" "); NUM("2"); WHITE_SPACE("  "); NUM("3"); WHITE_SPACE(" "); NUM("4414")]
